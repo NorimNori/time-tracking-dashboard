@@ -1,14 +1,16 @@
 
 const Stat = ({title, hours, pastHours}) => {
   return (
-    <div className="stat">
-      <div className={`stat__header stat__header--${title}`}></div>
+    <article className="stat" aria-labelledby={`stat-title-${title}`} aria-describedby={`stat-desc-${title}`}>
       <div className="stat__content">
-        <h2 className="stat__title">{title}</h2>
+        <div className= "stat__header">
+          <h2 className="stat__title">{title}</h2>
+          <span className="stat--icon"></span>      
+        </div>
         <p className="stat__hours">{hours}hrs</p>
-        <p className="stat__previous">Last Week - {pastHours}hrs</p>
+        <p id={`stat-desc-${title}`} className="stat__previous">Last Week - {pastHours}hrs</p>
       </div>
-    </div>
+    </article>
   )
 }
 

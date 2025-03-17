@@ -1,11 +1,11 @@
 
 const Menu = () => {
   return (
-    <section className="menu">
-      <ul className="menu__list">
-        <li className="menu__item">Daily</li>
-        <li className="menu__item menu__item--active">Weekly</li>
-        <li className="menu__item">Monthly</li>
+    <section className="menu" role="navigation" aria-label="Timeframe selection">
+      <ul className="menu__list" role="tablist">
+        <li className="menu--item" role="tab" tabIndex={0}>Daily</li>
+        <li className="menu--item" role="tab" tabIndex={0}>Weekly</li>
+        <li className="menu--item" role="tab" tabIndex={0}>Monthly</li>
       </ul>
     </section>
   )
