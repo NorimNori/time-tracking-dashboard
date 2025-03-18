@@ -1,0 +1,9 @@
+@mixin background-style($icon, $color, $size: auto) {
+    background: {
+      image: url($icon);
+      position: 93% -.7rem;
+      repeat: no-repeat;
+      size: $size;
+      color: $color;
+    }
+}

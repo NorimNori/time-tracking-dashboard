@@ -1,4 +1,5 @@
 @use '@/styles/colors.scss';
+@use '@/styles/mixins.scss';
 
 .stat {
     width: 100%;
@@ -53,57 +54,26 @@
     }
 
     &__Work {
-        background: {
-            image: url(../../assets/images/icon-work.svg);
-            position: 93% -.7rem;
-            repeat: no-repeat;
-            color: colors.$workRed;
-       }
+        @include mixins.background-style("../../assets/images/icon-work.svg", colors.$workRed);
     }
 
     &__Play {
-        background: {
-            image: url(../../assets/images/icon-play.svg);
-            position: 93% -.7rem;
-            repeat: no-repeat;
-            color: colors.$playBlue;
-       }
+        @include mixins.background-style("../../assets/images/icon-play.svg", colors.$playBlue);
     }
 
     &__Study {
-        background: {
-            image: url(../../assets/images/icon-study.svg);
-            position: 93% -.7rem;
-            repeat: no-repeat;
-            color: colors.$studyRed;
-       }
+        @include mixins.background-style("../../assets/images/icon-study.svg", colors.$studyRed);
     }
 
     &__Exercise {
-        background: {
-            image: url(../../assets/images/icon-exercise.svg);
-            position: 93% -.7rem;
-            repeat: no-repeat;
-            size: 30%;
-            color: colors.$exerciseGreen;
-       }
+        @include mixins.background-style("../../assets/images/icon-exercise.svg", colors.$exerciseGreen, 30%);
     }
 
     &__Social {
-        background: {
-            image: url(../../assets/images/icon-social.svg);
-            position: 93% -.7rem;
-            repeat: no-repeat;
-            color: colors.$socialViolet;
-       }
+        @include mixins.background-style("../../assets/images/icon-social.svg", colors.$socialViolet);
     }
 
     &__Self-Care {
-        background: {
-            image: url(../../assets/images/icon-self-care.svg);
-            position: 93% -.7rem;
-            repeat: no-repeat;
-            color: colors.$selfOrange;
-       }
+        @include mixins.background-style("../../assets/images/icon-self-care.svg", colors.$selfOrange);
     }
 }
