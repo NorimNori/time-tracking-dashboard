@@ -4,7 +4,6 @@
     width: 100%;
     padding-top: 2.5em;
     border-radius: 15px;
-    background-color: colors.$workRed;
 
     &__content {
         width: 100%;
@@ -51,5 +50,60 @@
         font-size: .9rem;
         font-weight: 400;
         color: colors.$paleBlue;
+    }
+
+    &__Work {
+        background: {
+            image: url(../../assets/images/icon-work.svg);
+            position: 93% -.7rem;
+            repeat: no-repeat;
+            color: colors.$workRed;
+       }
+    }
+
+    &__Play {
+        background: {
+            image: url(../../assets/images/icon-play.svg);
+            position: 93% -.7rem;
+            repeat: no-repeat;
+            color: colors.$playBlue;
+       }
+    }
+
+    &__Study {
+        background: {
+            image: url(../../assets/images/icon-study.svg);
+            position: 93% -.7rem;
+            repeat: no-repeat;
+            color: colors.$studyRed;
+       }
+    }
+
+    &__Exercise {
+        background: {
+            image: url(../../assets/images/icon-exercise.svg);
+            position: 93% -.7rem;
+            repeat: no-repeat;
+            size: 30%;
+            color: colors.$exerciseGreen;
+       }
+    }
+
+    &__Social {
+        background: {
+            image: url(../../assets/images/icon-social.svg);
+            position: 93% -.7rem;
+            repeat: no-repeat;
+            color: colors.$socialViolet;
+       }
+    }
+
+    &__Self-Care {
+        background: {
+            image: url(../../assets/images/icon-self-care.svg);
+            position: 93% -.7rem;
+            repeat: no-repeat;
+            color: colors.$selfOrange;
+       }
     }
 }
