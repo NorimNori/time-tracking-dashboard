@@ -1,0 +1,30 @@
+@use '@/styles/colors.scss';
+
+.profile {
+    border-radius: 15px;
+    padding: 2em 1.5em;
+    background-color: colors.$blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+
+    &__image {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        outline: 3px solid colors.$white;
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-top: .3em;
+    }
+}

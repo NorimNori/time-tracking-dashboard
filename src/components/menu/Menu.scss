@@ -1,0 +1,17 @@
+@use '@/styles/colors.scss';
+
+.menu {
+    padding: .5em 2em;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--item {
+        font-size: .95rem;
+        color: colors.$desaturatedBlue;
+    }
+}

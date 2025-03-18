@@ -1,4 +1,5 @@
 import profileImage from '@/assets/images/image-jeremy.png'
+import './Profile.scss'
 
 const Profile = () => {
   return (

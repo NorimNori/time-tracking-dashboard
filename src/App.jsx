@@ -17,6 +17,7 @@ function App() {
           <Stat
             key={item.title}
             title={item.title}
+            hours={item.timeframes.weekly.current}
             pastHours={item.timeframes.weekly.previous}
             aria-label={`${item.title} - ${item.timeframes.weekly.current} hours this week, ${item.timeframes.weekly.previous} last week`}
           />

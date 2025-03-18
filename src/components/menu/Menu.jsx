@@ -1,3 +1,4 @@
+import './Menu.scss'
 
 const Menu = () => {
   return (

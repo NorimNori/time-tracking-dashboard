@@ -1,0 +1,55 @@
+@use '@/styles/colors.scss';
+
+.stat {
+    width: 100%;
+    padding-top: 2.5em;
+    border-radius: 15px;
+    background-color: colors.$workRed;
+
+    &__content {
+        width: 100%;
+        padding: 2em 2em 2.5em;
+        height: fit-content;
+        border-radius: 15px;
+        background-color: colors.$darkBlue;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    &--icon {
+        width: 2em;
+        height: auto;
+        background: {
+             image: url(../../assets/images/icon-ellipsis.svg);
+             position: center;
+             repeat: no-repeat
+        }
+    }
+
+    &__tracking {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: .8em;
+    }
+
+    &__hours {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &__previous {
+        font-size: .9rem;
+        font-weight: 400;
+        color: colors.$paleBlue;
+    }
+}
